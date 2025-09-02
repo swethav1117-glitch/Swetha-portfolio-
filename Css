@@ -1,0 +1,70 @@
+/* Reset and base style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  transition: background 1s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  transition: color 0.5s ease;
+}
+
+header h1:hover {
+  color: #ffeb3b;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff9800;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #e65100;
+  transform: translateY(-3px);
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
