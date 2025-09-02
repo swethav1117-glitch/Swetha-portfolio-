@@ -1,0 +1,11 @@
+// JavaScript to change background color dynamically
+function changeBackground() {
+  const colors = [
+    "linear-gradient(135deg, #ff6a00, #ee0979)",
+    "linear-gradient(135deg, #00c6ff, #0072ff)",
+    "linear-gradient(135deg, #43cea2, #185a9d)",
+    "linear-gradient(135deg, #f7971e, #ffd200)"
+  ];
+  const random = Math.floor(Math.random() * colors.length);
+  document.body.style.background = colors[random];
+}
